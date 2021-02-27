@@ -37,21 +37,21 @@ ___
 
 International Market Institute (Samara Branch)
 
-Faculty: Faculty of Distance Learning
+*Faculty:* Faculty of Distance Learning
 
-Department: Finance and Credit
+*Department:* Finance and Credit
 
-Education form: Distant
+*Education form:* Distant
 
 **Educational establishment:** 
 
 Samara State Agricultural Academy
 
-Faculty: Faculty of Biotechnology and Veterinary Medicine
+*Faculty:* Faculty of Biotechnology and Veterinary Medicine
 
-Department: Zootechny
+*Department:* Zootechny
 
-Education form: Full-time
+*Education form:* Full-time
 ___
 ### English level: ### 
 A1 (Elementary) - in the process of increasing
