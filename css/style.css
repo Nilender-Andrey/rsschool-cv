@@ -1,0 +1,191 @@
+*,
+*:hover,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px/1.5 Arial, Tahoma;
+
+  background-color: rgb(228, 223, 214);
+}
+.page {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 1;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 15px 15px 0px 0px;
+
+  color: white;
+
+  background-color: rgb(94, 91, 91);
+}
+
+.header-photo {
+  flex: 0 0 auto;
+  max-width: 330px;
+  margin: 0;
+  padding: 20px;
+}
+
+.header-photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+header a {
+  color: rgb(182, 177, 177);
+}
+
+.header-section {
+  flex: 1 0 auto;
+  padding-left: 20px;
+}
+
+.header h1 {
+  margin: 35px 0 35px 0;
+
+  font-size: 35px;
+  text-align: center;
+}
+
+.header-section-list {
+  padding-left: 20px;
+
+  text-align: left;
+  font-size: 22px;
+
+  list-style-type: none;
+}
+
+/* aside */
+
+aside {
+  width: 35%;
+  order: 2;
+
+  background-color: rgb(179, 174, 174);
+}
+
+aside h2 {
+  border-bottom: 2px solid white;
+  margin: 30px 15px;
+
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+}
+
+aside p {
+  margin: 0 15px;
+
+  color: white;
+}
+
+.sidebar-skills-list {
+  margin: 0;
+  padding-left: 30px;
+
+  color: white;
+
+  list-style-type: none;
+}
+
+.sidebar-language {
+  margin-bottom: 20px;
+}
+
+/* main */
+
+main {
+  width: 65%;
+
+  background-color: rgb(212, 209, 209);
+
+  order: 3;
+}
+
+main h2 {
+  margin: 30px 0 5px 20px;
+
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.main-code-examples {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  background-color: rgb(160, 151, 151);
+}
+
+.main-education h3 {
+  margin: 30px 0 5px 20px;
+
+  font-size: 18px;
+}
+.main-education p {
+  padding-left: 15px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 0px 0px 15px 15px;
+  order: 4;
+
+  color: white;
+
+  background-color: rgb(94, 91, 91);
+}
+
+.footer_link_rsschool {
+  height: 80px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+
+  background-color: white;
+}
+
+.footer_link_myGitHub {
+  height: 100px;
+}
+
+.footer_link_youtube {
+  height: 70px;
+}
+
+.footer img {
+  height: 100%;
+}
+
+.p {
+  width: 100%;
+}
+
+.p p {
+  margin: 0 40px;
+  text-align: right;
+}

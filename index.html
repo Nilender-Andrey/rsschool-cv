@@ -3,164 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <title>CV</title>
-    <style>
-      *,
-      *:hover,
-      *::after {
-        box-sizing: border-box;
-      }
-      p {
-        margin: 0;
-      }
-      body {
-        font: 16px/1.5 Arial, Tahoma;
-
-        background-color: rgb(228, 223, 214);
-      }
-      .page {
-        display: flex;
-        margin: 0 auto;
-        max-width: 900px;
-      }
-
-      /*-------------------------------------------------------------*/
-      /*sidebar*/
-
-      .sidebar {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 35%;
-        align-items: stretch;
-
-        color: white;
-
-        background-color: rgb(82, 80, 80);
-        padding: 0 10px;
-        border-radius: 15px 0px 0px 15px;
-      }
-      .sidebar h2 {
-        margin: 30px 0 20px 0;
-
-        font-size: 20px;
-        text-transform: uppercase;
-
-        border-bottom: 2px solid white;
-      }
-
-      .sidebar-photo {
-        padding: 10px;
-      }
-      .sidebar-photo img {
-        max-width: 100%;
-
-        border-radius: 10px;
-      }
-      .sidebar-aboutMe {
-        text-align: justify;
-      }
-      .sidebar-skills-list {
-        margin: 0;
-        padding-left: 10px;
-
-        list-style-type: none;
-      }
-
-      .sidebar-language {
-        margin-bottom: 10px;
-      }
-
-      /*-------------------------------------------------------------*/
-      /*content*/
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 65%;
-
-        background-color: rgb(219, 215, 215);
-        padding: 15px 30px;
-        border-radius: 0px 15px 15px 0px;
-      }
-
-      .content h2 {
-        font-size: 20px;
-        text-transform: uppercase;
-
-        margin: 30px 0 5px 0;
-      }
-
-      .content-contacts h1 {
-        font-size: 22px;
-        text-transform: uppercase;
-
-        margin: 0 0 20px 0;
-      }
-      .content-contacts-table {
-        width: 100%;
-
-        font-size: 14px;
-
-        border-collapse: collapse;
-        border-top: 2px solid rgb(82, 80, 80);
-        border-bottom: 2px solid rgb(82, 80, 80);
-      }
-      .content-contacts-table td {
-        text-align: center;
-
-        padding: 5px;
-      }
-      .content-contacts-table td a {
-        text-decoration: none;
-      }
-      .content-code-examples {
-        font-size: 14px;
-
-        background-color: rgb(160, 151, 151);
-        margin: 0;
-        border-radius: 5px;
-      }
-
-      .content-education h3 {
-        margin: 10px 0 5px 0;
-      }
-      .content-education p {
-        padding-left: 15px;
-      }
-
-      @media (max-width: 800px) {
-        .page {
-          flex-direction: column;
-        }
-        .content {
-          border-radius: 0;
-        }
-        .sidebar {
-          border-radius: 0;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="page">
-      <div class="sidebar">
-        <div class="sidebar-photo">
-          <img src="img/photo.jpeg" alt="photo" />
+      <header class="header">
+        <div class="header-photo">
+          <img src="img/photo.jpeg" alt="My photo" />
         </div>
+        <section class="header-section">
+          <h1>Nilender Andrey Vladimirovich</h1>
 
-        <div class="sidebar-aboutMe">
+          <ul class="header-section-list">
+            <li>Address : Russia, Samara</li>
+            <li>
+              Phone number : <a href="tel:+79171151830">+7 (917) 115-18-30</a>
+            </li>
+            <li>
+              Email :
+              <a class="content-contacts-email" href="mailto:nilenderav@mail.ru"
+                >nilenderav@mail.ru</a
+              >
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <aside>
+        <section class="sidebar-aboutMe">
           <h2>About me</h2>
           <p><b>Marital status: </b>Married</p>
           <p><b>Date of birth: </b>11th December 1983</p>
           <p><b>Nationality: </b>Russian</p>
-          <p class="sidebar-aboutMe-p">
+
+          <p class="sidebar-aboutMe-info">
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            ullam unde quibusdam, labore voluptas, sequi temporibus ratione
-            blanditiis quia obcaecati quaerat voluptatum maxime officia error
-            voluptates beatae nihil. Reprehenderit, quaerat.
+            I study well. I take my work responsibly. I try not to stop
+            developing.
           </p>
-        </div>
-        <div class="sidebar-skills">
+        </section>
+
+        <section class="sidebar-skills">
           <h2>My skills</h2>
           <p><b>In the learning process:</b></p>
           <ul class="sidebar-skills-list">
@@ -168,89 +51,87 @@
             <li>CSS</li>
             <li>JS</li>
           </ul>
-        </div>
-        <div class="sidebar-language">
-          <h2>Language</h2>
+        </section>
 
+        <section class="sidebar-language">
+          <h2>Language</h2>
           <p>
             <b>English level: </b><br />
             A1 (Elementary) - in the process of increasing
           </p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="content-contacts">
-          <h1>Nilender Andrey Vladimirovich</h1>
-          <table class="content-contacts-table">
-            <tr>
-              <td>Address: <br />Russia, Samara</td>
-              <td>
-                Phone number: <br />
-                <a href="tel:+79171151830">+7 (917) 115-18-30</a>
-              </td>
-              <td>
-                Email: <br /><a
-                  class="content-contacts-email"
-                  href="mailto:nilenderav@mail.ru"
-                  >nilenderav@mail.ru</a
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="content-code">
+        </section>
+      </aside>
+
+      <main>
+        <section class="main-code">
           <h2>Code examples:</h2>
-          <pre class="content-code-examples">
-          function factorial (n) {
-            if (n > 12 || n &lt; 0) 
-                throw new RangeError(["n > 12||n &lt; 0"]);
-            if (n == 0) return 1;
-            else {
-              let i = 1;
-              for( n; n > 0; n-- ) {
-                i*=n;
-                }
-                return i;  
-              }
-          }
-          alert( factorial(12) );
+          <pre class="main-code-examples">
+  function factorial (n) {
+    if (n > 12 || n &lt; 0) 
+        throw new RangeError(["n > 12||n &lt; 0"]);
+    if (n == 0) return 1;
+    else {
+      let i = 1;
+      for( n; n > 0; n-- ) {
+        i*=n;
+        }
+        return i;  
+      }
+  }
+  alert( factorial(12) );
         </pre
           >
-        </div>
-        <div class="content-education">
+        </section>
+
+        <section class="main-education">
           <h2>Higher education:</h2>
           <h3>Educational establishment:</h3>
           <p>
             International Market Institute (Samara Branch)<br />
 
-            Faculty: Faculty of Distance Learning<br />
+            <i>Faculty:</i> Faculty of Distance Learning<br />
 
-            Department: Finance and Credit<br />
+            <i>Department:</i> Finance and Credit<br />
 
-            Education form: Distant
+            <i>Education form:</i> Distant
           </p>
 
           <h3>Educational establishment:</h3>
           <p>
             Samara State Agricultural Academy<br />
 
-            Faculty: Faculty of Biotechnology and Veterinary Medicine<br />
+            <i>Faculty:</i> Faculty of Biotechnology and Veterinary Medicine<br />
 
-            Department: Zootechny<br />
+            <i>Department:</i> Zootechny<br />
 
-            Education form: Full-time
+            <i>Education form:</i> Full-time
           </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer_link_rsschool">
+          <a href="https://rs.school/js/" target="_blank">
+            <img src="img/rs_school_js.svg" alt="https://rs.school/js/"
+          /></a>
         </div>
-        <div class="content-interest">
-          <h2>Interest:</h2>
-          <p class="sidebar-aboutMe-p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            ullam unde quibusdam, labore voluptas, sequi temporibus ratione
-            blanditiis quia obcaecati quaerat voluptatum maxime officia error
-            voluptates beatae nihil. Reprehenderit, quaerat.
-          </p>
+        <div class="footer_link_myGitHub">
+          <a href="https://github.com/Nilender-Andrey" target="_blank">
+            <img
+              src="img/GitHub.png"
+              alt="My GitHub"
+              title="Ссылка на мой GitHub"
+          /></a>
         </div>
-      </div>
+        <div class="footer_link_youtube">
+          <a href="#" target="_blank">
+            <img
+              src="img/YouTube_full-color_icon_(2017).svg"
+              alt="YouTube"
+              title="Ссылка на мой YouTube, видео не писал"
+          /></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
