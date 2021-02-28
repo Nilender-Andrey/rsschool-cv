@@ -180,3 +180,12 @@ footer {
 .footer img {
   height: 100%;
 }
+
+.p {
+  width: 100%;
+}
+
+.p p {
+  margin: 0 40px;
+  text-align: right;
+}
