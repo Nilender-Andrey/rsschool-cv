@@ -11,33 +11,31 @@ body {
 }
 .page {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
-
+  flex-wrap: wrap;
   max-width: 900px;
-  min-width: 500px;
 }
 
 /* Header */
 .header {
   display: flex;
-
-  width: 100%;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgb(94, 91, 91);
   order: 1;
-  color: white;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 20px;
   border-radius: 15px 15px 0px 0px;
+
+  color: white;
+
+  background-color: rgb(94, 91, 91);
 }
 
 .header-photo {
   flex: 0 0 auto;
   max-width: 330px;
-
   margin: 0;
   padding: 20px;
 }
@@ -53,49 +51,56 @@ header a {
 
 .header-section {
   flex: 1 0 auto;
-
   padding-left: 20px;
 }
+
 .header h1 {
+  margin: 35px 0 35px 0;
+
   font-size: 35px;
   text-align: center;
-  margin: 35px 0 35px 0;
 }
 
 .header-section-list {
-  list-style-type: none;
   padding-left: 20px;
+
   text-align: left;
   font-size: 22px;
+
+  list-style-type: none;
 }
 
 /* aside */
 
 aside {
   width: 35%;
+  order: 2;
 
   background-color: rgb(179, 174, 174);
-  order: 2;
 }
 
 aside h2 {
+  border-bottom: 2px solid white;
+  margin: 30px 15px;
+
   font-size: 22px;
   color: white;
-  border-bottom: 2px solid white;
   text-transform: uppercase;
-  margin: 30px 15px;
 }
 
 aside p {
-  color: white;
   margin: 0 15px;
+
+  color: white;
 }
 
 .sidebar-skills-list {
   margin: 0;
   padding-left: 30px;
-  list-style-type: none;
+
   color: white;
+
+  list-style-type: none;
 }
 
 .sidebar-language {
@@ -106,29 +111,32 @@ aside p {
 
 main {
   width: 65%;
+
   background-color: rgb(212, 209, 209);
 
   order: 3;
 }
 
 main h2 {
+  margin: 30px 0 5px 20px;
+
   font-size: 20px;
   text-transform: uppercase;
-
-  margin: 30px 0 5px 20px;
 }
 
 .main-code-examples {
-  font-size: 16px;
-
-  background-color: rgb(160, 151, 151);
   margin: 20px;
   padding: 10px 20px;
   border-radius: 5px;
+
+  font-size: 16px;
+
+  background-color: rgb(160, 151, 151);
 }
 
 .main-education h3 {
   margin: 30px 0 5px 20px;
+
   font-size: 18px;
 }
 .main-education p {
@@ -143,11 +151,13 @@ footer {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  background-color: rgb(94, 91, 91);
-  order: 4;
-  color: white;
   padding: 20px;
   border-radius: 0px 0px 15px 15px;
+  order: 4;
+
+  color: white;
+
+  background-color: rgb(94, 91, 91);
 }
 
 .footer_link_rsschool {
@@ -155,6 +165,7 @@ footer {
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
+
   background-color: white;
 }
 
