@@ -32,4 +32,14 @@ alert(factorial(12));
 ```
 ___
 
+### Higher education: ###
 
+**Educational establishment:**
+
+International Market Institute (Samara Branch)
+
+*Faculty:* Faculty of Distance Learning
+
+*Department:* Finance and Credit
+
+*Education form:* Distant
