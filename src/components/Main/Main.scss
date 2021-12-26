@@ -1,0 +1,18 @@
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+
+  background-color: white;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+
+  .avatar__photo {
+    object-fit: cover;
+  }
+}

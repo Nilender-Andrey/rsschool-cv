@@ -2,7 +2,7 @@
 
 //! конфигуратор
 const bundleName = 'index'; // название итоговой сборки
-const title = 'Привет'; // добовляет title в html
+const title = 'Nilender Andrey'; // добовляет title в html
 const fileCss = false; // создать отдельный css файл или все стили в js засунуть
 const minYesOrNo = true; // минимизировать файлы?
 const svgInFile = false; // svg закодировать в файл
@@ -26,20 +26,20 @@ module.exports = {
   mode: 'development',
   //* "development" - режим разработки (не минифицируется);
 
-  //!параметры входных файлов
+  //! параметры входных файлов
   // entry: './src/index.js', //* путь, если указан context, то 'src' удаляем
   entry: {
-    //*можно добавить несколько входных файлов
+    //* можно добавить несколько входных файлов
     main: path.resolve(__dirname, '..', 'src/index.tsx'),
   },
 
-  //!параметры выходных файлов
+  //! параметры выходных файлов
   output: {
-    path: path.resolve(__dirname, '..', 'dist'), //*путь + папка
+    path: path.resolve(__dirname, '..', 'dist'), //* путь + папка
     // filename: 'bundel.js', //*имя итогового файла
     // filename: '[name].bundel.js', //* [name] добавляет имя входного файла (актуально для нескольких входных файлов )
     // filename: fileName('js'), //* [contenthash] добавляет название в зависимости от контента (кодовый шифр)
-    filename: bundleName + '.js',
+    filename: `${bundleName}.js`,
     assetModuleFilename: 'assets/[hash][ext][query]', //* куда складываем сопутствующие файлы и в каком виде
     clean: true, //* очищает dist перед новой сборкой
   },
@@ -57,15 +57,15 @@ module.exports = {
   //! подключаем плагины
   plugins: [
     //* создает html в итоговой сборке с подключенными js файлами
-    //? npm i -D html-webpack-plugin
+    // ? npm i -D html-webpack-plugin
     new HtmlWebpackPlugin({
       // filename: 'index.html', //* можно задать имя
-      title: title, //* задает title в html
+      title, //* задает title в html
       template: path.resolve(__dirname, '..', 'public/index.html'), //* если не указан то создаст пустой html, если указан то возмет его за основу(т.е. перенесет весь код)
     }),
 
     //* для переноса статических файлов
-    //? npm install copy-webpack-plugin --save-dev
+    // ? npm install copy-webpack-plugin --save-dev
     // работает без этого
     // new CopyPlugin({
     //   patterns: [
@@ -78,7 +78,7 @@ module.exports = {
     // }),
 
     //* создает отдельный файл css
-    //? npm install --save-dev mini-css-extract-plugin
+    // ? npm install --save-dev mini-css-extract-plugin
     new MiniCssExtractPlugin(),
   ],
   //! как работать с разными типами файлов
@@ -106,8 +106,7 @@ module.exports = {
             type: 'asset/inline',
             generator: {
               dataUrl: (content) => {
-                content = content.toString();
-                return svgToMiniDataURI(content);
+                return svgToMiniDataURI(content.toString());
               },
             },
           }
@@ -185,27 +184,27 @@ module.exports = {
   },
 
   // //! карты
-  //devtool: 'source-map',
-  //devtool: 'cheap-module-source-map',
+  // devtool: 'source-map',
+  // devtool: 'cheap-module-source-map',
 
   optimization: {
     minimize: minYesOrNo,
     minimizer: [
       //* минимизирует css
-      //? npm install css-minimizer-webpack-plugin --save-dev
+      // ? npm install css-minimizer-webpack-plugin --save-dev
       new CssMinimizerPlugin(),
 
       //* минимизирует html
-      //? npm install html-minimizer-webpack-plugin --save-dev
+      // ? npm install html-minimizer-webpack-plugin --save-dev
       new HtmlMinimizerPlugin(),
 
       //* минимизирует js
-      //? npm install terser-webpack-plugin --save-dev
+      // ? npm install terser-webpack-plugin --save-dev
       new TerserPlugin(),
     ],
   },
 
-  //? npm i -D webpack-dev-server
+  // ? npm i -D webpack-dev-server
   devServer: {
     port: 4200,
   },
