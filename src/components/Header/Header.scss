@@ -6,10 +6,9 @@
   border-radius: 30px;
   background-color: $BG_COLOR_DARK;
 
-  -webkit-box-shadow: $BOX_SHADOW_GREY;
-  -moz-box-shadow: $BOX_SHADOW_GREY;
-  box-shadow: $BOX_SHADOW_GREY;
-
+  -webkit-box-shadow: $BOX_SHADOW_DARK;
+  -moz-box-shadow: $BOX_SHADOW_DARK;
+  box-shadow: $BOX_SHADOW_DARK;
   &_horizontally {
     position: relative;
 
@@ -36,7 +35,7 @@
 
 @media (max-width: 1400px) {
   .nav_vertically {
-    right: -11px;
+    right: -8px;
   }
 }
 

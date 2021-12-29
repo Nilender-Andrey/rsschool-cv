@@ -10,7 +10,7 @@ function Profile() {
 
       <div className="profile">
         <h1 className="profile__title">Andrey Nilender</h1>
-        <div className="decoration" />
+        <div className="decoration decoration_color_blue" />
         <h3 className="profile__profession">
           Junior JavaScript / React developer
         </h3>

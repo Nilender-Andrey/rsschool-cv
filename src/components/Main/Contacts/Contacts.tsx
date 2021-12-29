@@ -4,16 +4,17 @@ import './Contacts.scss';
 function Contacts() {
   return (
     <section
-      className="section-narrow section-narrow_positioning_column section-narrow_first-child"
+      className="section-narrow section-narrow_first-child"
       id="contacts"
     >
       <h2 className="section__title">contacts</h2>
+      <div className="decoration decoration_color_grey" />
       <ul className="contacts-list list">
-        <li className="contacts-list__item">
+        <li className="contacts-list__item list__item">
           <span>Samara, Russia</span>
         </li>
 
-        <li className="contacts-list__item">
+        <li className="contacts-list__item list__item">
           Email:{' '}
           <a
             className="contacts-list__link link"
@@ -23,7 +24,7 @@ function Contacts() {
           </a>
         </li>
 
-        <li className="contacts-list__item">
+        <li className="contacts-list__item list__item">
           GitHub:{' '}
           <a
             className="contacts-list__link link"

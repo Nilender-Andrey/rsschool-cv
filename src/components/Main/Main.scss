@@ -5,11 +5,12 @@
   max-width: $MAX_WIDTH;
   padding: 20px 20px 20px 0;
 
+  border-radius: 5px;
   background-color: $BG_COLOR_DARK;
 
-  -webkit-box-shadow: $BOX_SHADOW_GREY;
-  -moz-box-shadow: $BOX_SHADOW_GREY;
-  box-shadow: $BOX_SHADOW_GREY;
+  -webkit-box-shadow: $BOX_SHADOW_DARK;
+  -moz-box-shadow: $BOX_SHADOW_DARK;
+  box-shadow: $BOX_SHADOW_DARK;
 }
 
 .container {

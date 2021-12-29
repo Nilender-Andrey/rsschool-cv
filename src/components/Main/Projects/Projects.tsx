@@ -25,11 +25,9 @@ const projects = [
 
 function Projects() {
   return (
-    <section
-      className="section-broad section-broad_positioning_column"
-      id="projects"
-    >
+    <section className="section-broad" id="projects">
       <h2 className="section__title">projects</h2>
+      <div className="decoration decoration_color_dark-grey" />
       <ul className="projects-list">
         {projects.map((item) => (
           <li className="projects-list__item" key={item.name}>
