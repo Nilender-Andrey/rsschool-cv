@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+html {
+  font-size: 18px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
   font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #f2f2f7;
 }
 
-html {
-  font-size: 14px;
-}
-#root {
-  background-color: aqua;
+@media (max-width: 1400px) {
+  body {
+    padding: 0 50px;
+  }
 }

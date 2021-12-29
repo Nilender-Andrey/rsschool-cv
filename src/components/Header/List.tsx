@@ -1,45 +1,68 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const navList = [
   {
     name: `Contacts`,
-    path: '#contacts',
+    path: 'contacts',
   },
   {
     name: `Summary`,
-    path: '#summary',
+    path: 'summary',
   },
   {
     name: `Skills`,
-    path: '#skills',
-  },
-  {
-    name: `Code`,
-    path: '#code',
+    path: 'skills',
   },
   {
     name: `Projects`,
-    path: '#projects',
+    path: 'projects',
   },
   {
     name: `Education`,
-    path: '#education',
+    path: 'education',
   },
   {
-    name: `English`,
-    path: '#english',
+    name: `Courses`,
+    path: 'courses',
+  },
+  {
+    name: `Languages`,
+    path: 'languages',
   },
 ];
 
-function List() {
+interface IList {
+  position: string;
+}
+
+function List({ position }: IList) {
   return (
-    <ul className="list">
+    <ul className="nav-list">
+      {position === 'nav_vertically' && (
+        <li className="nav-list__item">
+          <Link
+            className="nav-list__arrow"
+            to="header"
+            offset={-100}
+            smooth
+            duration={500}
+          >
+            🠖
+          </Link>
+        </li>
+      )}
       {navList.map((item) => (
-        <li className="list__item" key={item.name}>
-          <NavLink className="link" to={item.path}>
+        <li className="nav-list__item" key={item.name}>
+          <Link
+            className="nav-list__link"
+            to={item.path}
+            offset={-100}
+            smooth
+            duration={500}
+          >
             {item.name}
-          </NavLink>
+          </Link>
         </li>
       ))}
     </ul>

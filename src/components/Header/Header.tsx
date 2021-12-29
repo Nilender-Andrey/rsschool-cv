@@ -9,7 +9,7 @@ function Header() {
   useEffect(() => {
     window.onscroll = () => {
       if (window.pageYOffset > 30) {
-        setPosition('nav_vertically');
+        setPosition(`nav_vertically`);
       } else {
         setPosition('nav_horizontally');
       }
@@ -17,9 +17,9 @@ function Header() {
   }, []);
 
   return (
-    <header className="header">
+    <header className="header" id="header">
       <nav className={`nav ${position}`}>
-        <List />
+        <List position={position} />
       </nav>
     </header>
   );

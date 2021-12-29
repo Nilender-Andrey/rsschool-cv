@@ -1,0 +1,32 @@
+@import './../../config';
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0 20px;
+  max-width: $MAX_WIDTH;
+  height: 50px;
+
+  background-color: $BG_COLOR_LIGHT;
+
+  -webkit-box-shadow: $BOX_SHADOW_GREY;
+  -moz-box-shadow: $BOX_SHADOW_GREY;
+  box-shadow: $BOX_SHADOW_GREY;
+}
+
+.footer_position {
+  margin: 40px auto 0;
+}
+
+.course-logo {
+  display: block;
+
+  padding: 5px 0;
+  height: inherit;
+}
+
+.course-img {
+  height: 100%;
+}

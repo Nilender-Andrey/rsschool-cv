@@ -1,0 +1,12 @@
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.skills-list__logo {
+  max-width: 80px;
+  padding: 5px;
+}
