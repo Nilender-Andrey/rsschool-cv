@@ -1,4 +1,5 @@
 import React from 'react';
+import './Courses.scss';
 
 const courses = [
   {
@@ -18,12 +19,12 @@ const courses = [
 function Courses() {
   return (
     <section className="section-broad" id="courses">
-      <h2 className="section__title">courses</h2>
+      <h2 className="subtitle">courses</h2>
       <div className="decoration decoration_color_dark-grey" />
       <ul className="courses-list list">
         {courses.map((item) => (
           <li className="courses-list__item list__item">
-            {item.school}:{' '}
+            {item.school} -{' '}
             <a className="courses-list__link link" href={item.certificate_link}>
               {item.courseName}
             </a>

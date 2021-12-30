@@ -14,8 +14,42 @@ html {
   color: #f2f2f7;
 }
 
+@media (min-width: 1400px) {
+  body {
+    padding: 0 10%;
+  }
+}
+
 @media (max-width: 1400px) {
   body {
     padding: 0 55px;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 0 50px 0 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    padding: 0 40px 0 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    padding: 60px 3px 0 3px;
   }
 }

@@ -1,11 +1,15 @@
 import React from 'react';
+import photo from '../../../assets/my-photo.jpg';
+
 import './Pofile.scss';
 
 function Profile() {
   return (
-    <section className="section-profile section_positioning_row">
+    <section className="section-profile">
       <div className="avatar">
-        <div className="avatar__photo" />
+        <div className="avatar__photo">
+          <img className="avatar__img" src={photo} alt="Andrey Nilender" />
+        </div>
       </div>
 
       <div className="profile">

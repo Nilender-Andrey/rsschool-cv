@@ -23,7 +23,7 @@ const skills = [
 function Skills() {
   return (
     <section className="section-narrow" id="skills">
-      <h2 className="section__title">skills</h2>
+      <h2 className="subtitle">skills</h2>
       <div className="decoration decoration_color_grey" />
       <ul className="skills-list">
         {skills.map((item) => (

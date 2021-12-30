@@ -8,6 +8,7 @@ import Projects from './Projects/Projects';
 import Courses from './Courses/Courses';
 import Languages from './Languages/Languages';
 import Education from './Education/Education';
+import Code from './Code/Code';
 
 function Main() {
   return (
@@ -19,6 +20,7 @@ function Main() {
         <Skills />
         <Projects />
         <Languages />
+        <Code />
         <Courses />
         <Education />
       </div>

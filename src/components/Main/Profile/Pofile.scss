@@ -1,4 +1,5 @@
-@import './../../../config';
+@import './../../../_styles';
+@import './../../../_colors';
 
 .section-profile {
   display: flex;
@@ -22,25 +23,19 @@
   width: 200px;
   height: 200px;
 
+  border: 3px solid #fff;
   border-radius: 50%;
-  background: no-repeat 8% 17%/200% url('./../../../assets/my-photo.jpg');
 
-  &::after {
-    position: relative;
-    top: -7px;
-    left: -7px;
-    z-index: 10;
+  overflow: hidden;
+}
 
-    display: block;
+.avatar__img {
+  position: absolute;
+  top: -31px;
+  left: -6px;
 
-    content: '';
-
-    width: 208px;
-    height: 208px;
-
-    border: 3px solid #fff;
-    border-radius: 50%;
-  }
+  display: block;
+  object-fit: cover;
 }
 
 .profile {
@@ -66,4 +61,50 @@
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+@media (max-width: 1000px) {
+  .profile__title {
+    font-size: 1.4rem;
+  }
+  .profile__profession {
+    font-size: 1.2rem;
+  }
+  .avatar {
+    padding: 15px 2% 10px calc(20px + 2%);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-profile {
+    gap: 0px;
+    padding: 0px 0;
+    margin-bottom: 0px;
+  }
+
+  .profile,
+  .avatar {
+    padding: 10px 5px;
+    align-items: center;
+  }
+
+  .avatar__photo {
+    width: 125px;
+    height: 125px;
+  }
+
+  .avatar__img {
+    top: -13px;
+    left: 2px;
+    width: 100%;
+  }
+
+  .profile__title {
+    font-size: 1rem;
+  }
+
+  .profile__profession {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
 }

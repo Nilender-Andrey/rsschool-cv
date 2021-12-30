@@ -11,13 +11,20 @@ function Footer() {
         <a
           className="footer-info__link link"
           href="https://github.com/Nilender-Andrey"
+          target="_blank"
+          rel="noreferrer"
         >
           Nilender-Andrey
         </a>
       </div>
 
-      <a className="course-logo" href="https://rs.school/js/">
-        <img className="course-img" src={logo} alt="rs school logo" />
+      <a
+        className="course-logo"
+        href="https://rs.school/js/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className="course-img" src={logo} alt="rs-school logo" />
       </a>
     </footer>
   );

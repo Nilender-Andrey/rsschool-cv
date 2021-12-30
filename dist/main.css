@@ -1,0 +1,450 @@
+/*!*****************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./App.scss ***!
+  \*****************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap);
+/*!*********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./App.scss (1) ***!
+  \*********************************************************************************************************/
+html {
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #f2f2f7;
+}
+
+@media (min-width: 1400px) {
+  body {
+    padding: 0 10%;
+  }
+}
+@media (max-width: 1400px) {
+  body {
+    padding: 0 55px;
+  }
+}
+@media (max-width: 970px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 0 50px 0 10px;
+  }
+}
+/*!**************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Footer/Footer.scss ***!
+  \**************************************************************************************************************************/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  height: 60px;
+  border-radius: 5px 5px 0 0;
+  background-color: #7c7c80;
+  -webkit-box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+  -moz-box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+  box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+}
+
+.footer_position {
+  margin: 40px auto 0;
+}
+
+.course-logo {
+  display: block;
+  padding: 12px 0;
+  height: inherit;
+}
+
+.course-img {
+  height: 100%;
+}
+/*!**************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Header/Header.scss ***!
+  \**************************************************************************************************************************/
+.nav {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #545456;
+  -webkit-box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+  -moz-box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+  box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+}
+.nav_horizontally {
+  position: relative;
+  margin: 15px -50px 40px auto;
+  width: 700px;
+  transition: transform 1s;
+  transform-origin: 100% 100%;
+  transform: rotate(0deg);
+}
+.nav_vertically {
+  position: fixed;
+  top: -55px;
+  right: 10px;
+  margin: 10px 10px 0 0;
+  width: 750px;
+  transform-origin: 100% 100%;
+  transition: transform 1s;
+  transform: rotate(-90deg);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.nav-list__item {
+  position: relative;
+}
+
+.nav-list__link {
+  color: #f2f2f7;
+  text-decoration: none;
+}
+
+.nav-list__arrow {
+  padding: 5px;
+  border: 1px solid #f2f2f7;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-list__arrow:hover {
+  color: #007aff;
+  border: 1px solid #007aff;
+}
+
+@media (min-width: 1400px) {
+  .nav_vertically {
+    right: 5%;
+  }
+}
+@media (max-width: 1400px) {
+  .nav_vertically {
+    right: -8px;
+  }
+}
+@media (max-width: 970px) {
+  .nav {
+    padding: 10px;
+  }
+  .nav_horizontally {
+    width: 640px;
+  }
+  .nav_vertically {
+    width: 680px;
+  }
+
+  .nav-list__arrow {
+    font-size: 16px;
+  }
+}
+/*!**********************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Main/Main.scss ***!
+  \**********************************************************************************************************************/
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 20px 20px 0;
+  border-radius: 5px;
+  background-color: #545456;
+  -webkit-box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+  -moz-box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+  box-shadow: -3px 3px 9px 3px rgba(84, 84, 86, 0.7);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 970px) {
+  .main {
+    padding: 0 5px 5px 0;
+  }
+}
+/*!*******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Main/Skills/Skills.scss ***!
+  \*******************************************************************************************************************************/
+.skills-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 5%;
+  height: 100%;
+  list-style-type: none;
+  border-radius: 5px;
+  background-color: #f2f2f7;
+  -webkit-box-shadow: -2px 2px 1px 2px rgba(0, 122, 255, 0.7) inset;
+  -moz-box-shadow: -2px 2px 1px 2px rgba(0, 122, 255, 0.7) inset;
+  box-shadow: -2px 2px 1px 2px rgba(0, 122, 255, 0.7) inset;
+}
+
+.skills-list__logo {
+  max-width: 80px;
+  padding: 5px;
+}
+/*!********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Main/Profile/Pofile.scss ***!
+  \********************************************************************************************************************************/
+#contacts {
+  order: 1;
+}
+
+#summary {
+  order: 2;
+}
+
+#skills {
+  order: 3;
+}
+
+#projects {
+  order: 4;
+}
+
+#languages {
+  order: 5;
+}
+
+#courses {
+  order: 6;
+}
+
+#code {
+  order: 7;
+}
+
+#education {
+  order: 8;
+}
+
+.section-narrow,
+.section-broad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section-narrow {
+  flex: 1 5 auto;
+  width: calc(30% - 10px);
+  padding: 20px 1%;
+  background-color: #007aff;
+  margin-right: 1.5%;
+  -webkit-box-shadow: -4px 2px 3px 1px rgba(0, 122, 255, 0.7);
+  -moz-box-shadow: -4px 2px 3px 1px rgba(0, 122, 255, 0.7);
+  box-shadow: -4px 2px 3px 1px rgba(0, 122, 255, 0.7);
+}
+.section-narrow_first-child {
+  border-radius: 0 5px 0 0;
+}
+.section-narrow_last-child {
+  border-radius: 0 0 5px 0;
+}
+
+.section-broad {
+  flex: 0 1 auto;
+  padding: 20px 3%;
+  width: calc(70% - 10px);
+  background-color: #7c7c80;
+  -webkit-box-shadow: -2px 2px 3px 1px rgba(124, 124, 128, 0.7);
+  -moz-box-shadow: -2px 2px 3px 1px rgba(124, 124, 128, 0.7);
+  box-shadow: -2px 2px 3px 1px rgba(124, 124, 128, 0.7);
+}
+.section-broad_first-child {
+  border-radius: 5px 5px 0 0;
+}
+.section-broad_last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.section_positioning_row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.section__title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #f2f2f7;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.list {
+  color: #f2f2f7;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #f2f2f7;
+}
+.link::before {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #007aff;
+  transition: width linear 0.5s;
+}
+.link:hover {
+  color: #007aff;
+}
+.link:hover::before {
+  left: 0;
+  width: 100%;
+  transition: width linear 0.5s;
+}
+
+.list__item {
+  margin-bottom: 10px;
+}
+
+.decoration {
+  width: 80%;
+  height: 4px;
+  border-radius: 2px;
+}
+.decoration_color_blue {
+  margin: 10px auto;
+  background-color: #007aff;
+}
+.decoration_color_grey {
+  margin: 20px auto;
+  background-color: #7c7c80;
+}
+.decoration_color_dark-grey {
+  margin: 20px auto;
+  background-color: #545456;
+}
+
+@media (max-width: 970px) {
+  .section-narrow,
+.section-broad {
+    padding: 10px 1%;
+  }
+
+  .section__title {
+    font-size: 1.1rem;
+  }
+}
+.section-profile {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 2% 30px calc(20px + 2%);
+}
+
+.avatar__photo {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar__img {
+  position: absolute;
+  top: -31px;
+  left: -6px;
+  display: block;
+  object-fit: cover;
+}
+
+.profile {
+  flex: 1 1 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 2%;
+}
+
+.profile__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.profile__profession {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 970px) {
+  .profile__title {
+    font-size: 1.4rem;
+  }
+
+  .profile__profession {
+    font-size: 1.2rem;
+  }
+
+  .avatar {
+    padding: 15px 2% 10px calc(20px + 2%);
+  }
+}
+/*!***********************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Main/Projects/Projects.scss ***!
+  \***********************************************************************************************************************************/
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  list-style: none;
+  background-color: #545456;
+  -webkit-box-shadow: -2px 2px 1px 2px rgba(124, 124, 128, 0.7) inset;
+  -moz-box-shadow: -2px 2px 1px 2px rgba(124, 124, 128, 0.7) inset;
+  box-shadow: -2px 2px 1px 2px rgba(124, 124, 128, 0.7) inset;
+}
+
+.projects-list__item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.projects-list__jmg {
+  max-width: 300px;
+}
+
+@media (max-width: 970px) {
+  .projects-list {
+    height: 100%;
+  }
+}

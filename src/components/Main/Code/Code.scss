@@ -1,6 +1,6 @@
-@import './../../../_colors';
+@import './../../../colors';
 
-.projects-list {
+.code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -10,30 +10,23 @@
 
   border-radius: 5px;
 
-  list-style: none;
-
   background-color: $BG_COLOR_DARK;
 
   -webkit-box-shadow: $BOX_SHADOW_GREY_INSET;
   -moz-box-shadow: $BOX_SHADOW_GREY_INSET;
   box-shadow: $BOX_SHADOW_GREY_INSET;
-}
-.projects-list__item {
-  text-align: center;
-  max-width: 300px;
-}
-.projects-list__jmg {
-  max-width: 300px;
+
+  font-size: 0.9rem;
 }
 
-@media (max-width: 1000px) {
-  .projects-list {
-    height: 100%;
+@media (max-width: 800px) {
+  .code {
+    padding: 10px 5px;
+    font-size: 0.85rem;
   }
 }
-
 @media (max-width: 640px) {
-  .projects-list__jmg {
-    max-width: 250px;
+  #code {
+    display: none;
   }
 }

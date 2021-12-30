@@ -1,4 +1,4 @@
-@import './../../config';
+@import './../../_colors';
 
 .footer {
   display: flex;
@@ -30,4 +30,10 @@
 
 .course-img {
   height: 100%;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 0 3px;
+  }
 }

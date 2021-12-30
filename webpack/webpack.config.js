@@ -3,8 +3,8 @@
 //! конфигуратор
 const bundleName = 'index'; // название итоговой сборки
 const title = 'Nilender Andrey'; // добовляет title в html
-const fileCss = false; // создать отдельный css файл или все стили в js засунуть
-const minYesOrNo = true; // минимизировать файлы?
+const fileCss = true; // создать отдельный css файл или все стили в js засунуть
+const minYesOrNo = false; // минимизировать файлы?
 const svgInFile = false; // svg закодировать в файл
 
 //! *************************************************
@@ -17,6 +17,27 @@ const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin'); //* мин
 const TerserPlugin = require('terser-webpack-plugin'); //* минимизирует js
 const svgToMiniDataURI = require('mini-svg-data-uri'); //* svg закодировать в файл
 const { webpack } = require('webpack');
+
+//* css минимизоторы - добавить любой в CssMinimizerPlugin(сюда)
+
+const veryGood = {
+  minimizerOptions: {
+    preset: [
+      'default',
+      {
+        discardComments: { removeAll: true },
+      },
+    ],
+  },
+};
+
+const csso = {
+  minify: CssMinimizerPlugin.cssoMinify,
+};
+
+const cleanCss = {
+  minify: CssMinimizerPlugin.cleanCssMinify,
+};
 
 module.exports = {
   //! указываем корневую папку (все пути указываем уже без нее)
@@ -141,6 +162,15 @@ module.exports = {
           fileCss ? MiniCssExtractPlugin.loader : 'style-loader',
           'css-loader',
           'sass-loader',
+          // минимизирует scss
+          /*   {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                outputStyle: 'compressed',
+              },
+            },
+          }, */
         ],
       },
       //* для babel
@@ -192,7 +222,7 @@ module.exports = {
     minimizer: [
       //* минимизирует css
       // ? npm install css-minimizer-webpack-plugin --save-dev
-      new CssMinimizerPlugin(),
+      new CssMinimizerPlugin(veryGood),
 
       //* минимизирует html
       // ? npm install html-minimizer-webpack-plugin --save-dev
