@@ -17,10 +17,7 @@ function Contacts() {
         <li className="contacts-list__item list__item">
           <span className="list__icon list__icon_email" />
           <span className="list__text"> Email: </span>
-          <a
-            className="contacts-list__link link"
-            href="mailto:nilenderav@mail.ru"
-          >
+          <a className="contacts-list__link" href="mailto:nilenderav@mail.ru">
             {' '}
             nilenderav@mail.ru
           </a>
@@ -31,9 +28,10 @@ function Contacts() {
           <span className="list__text"> GitHub: </span>
 
           <a
-            className="contacts-list__link link"
+            className="contacts-list__link"
             href="https://github.com/Nilender-Andrey"
-            target="__blank"
+            target="_blank"
+            rel="noreferrer"
           >
             {' '}
             Nilender-Andrey

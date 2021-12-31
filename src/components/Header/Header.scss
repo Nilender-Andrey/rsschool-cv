@@ -39,7 +39,7 @@
     box-shadow: $BOX_SHADOW_DARK_VERTICALLY;
   }
 }
-.burger-nav-list,
+
 .nav-list {
   display: flex;
   justify-content: center;
@@ -47,13 +47,12 @@
 
   list-style-type: none;
 }
-.burger-nav-list__item,
+
 .nav-list__item {
   position: relative;
 }
 
-.nav-list__link,
-.burger-nav-list__link {
+.nav-list__link {
   color: $LINK_NAV_COLOR;
   text-decoration: none;
   padding: 9px;
@@ -72,7 +71,10 @@
 
   &:hover::before {
     left: 0;
-    width: 100%;
+
+    width: 85%;
+    margin-left: 7.5%;
+
     transition: width linear 0.5s;
   }
 }
@@ -89,46 +91,6 @@
   &:hover {
     color: $HOVER;
     border: 1px solid $HOVER;
-  }
-}
-
-.burger-nav {
-  position: fixed;
-  top: 60px;
-  right: 10px;
-
-  display: none;
-
-  width: 100%;
-  height: 320px;
-  max-width: 200px;
-
-  border-radius: 5px;
-  background-color: $BG_COLOR_LIGHT;
-
-  -webkit-box-shadow: $BOX_SHADOW_DARK;
-  -moz-box-shadow: $BOX_SHADOW_DARK;
-  box-shadow: $BOX_SHADOW_DARK;
-
-  transition: right 1s;
-
-  &_not-visible {
-    right: -250px;
-    transition: right 1s;
-  }
-}
-
-.burger-nav-list {
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.burger-nav-list__link {
-  display: block;
-  padding: 6px;
-
-  &::before {
-    top: 30px;
   }
 }
 

@@ -23,7 +23,10 @@ function Courses() {
       <div className="decoration decoration_color_dark-grey" />
       <ul className="courses-list list">
         {courses.map((item) => (
-          <li className="courses-list__item list__item">
+          <li
+            className="courses-list__item list__item"
+            key={item.certificate_link}
+          >
             {item.school} -{' '}
             <a className="courses-list__link link" href={item.certificate_link}>
               {item.courseName}
