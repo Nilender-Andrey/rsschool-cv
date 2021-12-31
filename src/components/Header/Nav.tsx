@@ -29,7 +29,7 @@ function Nav({ position, navList }: INav) {
         {navList.map((item) => (
           <li className="nav-list__item" key={item.name}>
             <Link
-              className="nav-list__link"
+              className="nav-list__link link"
               to={item.path}
               offset={-100}
               smooth

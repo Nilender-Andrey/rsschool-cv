@@ -15,11 +15,6 @@
   transition: right 0.6s linear 0.6s;
 }
 
-.remove-burger {
-  transition: right 0.6s linear;
-  right: -30%;
-}
-
 .burger::before,
 .burger::after,
 .burger span {

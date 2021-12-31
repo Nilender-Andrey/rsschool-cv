@@ -26,10 +26,10 @@
 
   padding: 12px 0;
   height: inherit;
-}
 
-.course-img {
-  height: 100%;
+  &__img {
+    height: 100%;
+  }
 }
 
 @media (max-width: 640px) {

@@ -6,10 +6,10 @@ import './Footer.scss';
 function Footer() {
   return (
     <footer className="footer footer_position">
-      <div className="footer-info">
+      <div className="footer__info">
         © 2022{' '}
         <a
-          className="footer-info__link link"
+          className="footer__link link"
           href="https://github.com/Nilender-Andrey"
           target="_blank"
           rel="noreferrer"
@@ -24,7 +24,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <img className="course-img" src={logo} alt="rs-school logo" />
+        <img className="course-logo__img" src={logo} alt="rs-school logo" />
       </a>
     </footer>
   );

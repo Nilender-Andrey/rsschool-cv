@@ -6,10 +6,6 @@
   border-radius: 30px;
   background-color: $BG_COLOR_DARK;
 
-  -webkit-box-shadow: $BOX_SHADOW_DARK;
-  -moz-box-shadow: $BOX_SHADOW_DARK;
-  box-shadow: $BOX_SHADOW_DARK;
-
   &_horizontally {
     position: relative;
     z-index: 10;
@@ -20,6 +16,10 @@
     transition: transform 1s;
     transform-origin: 100% 100%;
     transform: rotate(0deg);
+
+    -webkit-box-shadow: $BOX_SHADOW_DARK;
+    -moz-box-shadow: $BOX_SHADOW_DARK;
+    box-shadow: $BOX_SHADOW_DARK;
   }
 
   &_vertically {
@@ -33,6 +33,10 @@
     transform-origin: 100% 100%;
     transition: transform 1s;
     transform: rotate(-90deg);
+
+    -webkit-box-shadow: $BOX_SHADOW_DARK_VERTICALLY;
+    -moz-box-shadow: $BOX_SHADOW_DARK_VERTICALLY;
+    box-shadow: $BOX_SHADOW_DARK_VERTICALLY;
   }
 }
 .burger-nav-list,
@@ -64,9 +68,6 @@
     height: 2px;
     background-color: $HOVER_COLOR_NAV;
     transition: width linear 0.5s;
-  }
-  &:hover {
-    color: $HOVER_COLOR_NAV;
   }
 
   &:hover::before {

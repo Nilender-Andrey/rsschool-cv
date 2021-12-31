@@ -16,7 +16,7 @@ function Burger({ handleBurgerClick, visible }: IBurger) {
       onClick={handleBurgerClick}
       onKeyDown={handleBurgerClick}
     >
-      <span className="burger_span" />
+      <span />
     </div>
   );
 }
