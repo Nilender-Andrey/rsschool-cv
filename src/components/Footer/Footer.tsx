@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer footer_position">
       <div className="footer__info">
-        © 2022{' '}
+        © 2024{' '}
         <a
           className="footer__link link"
           href="https://github.com/Nilender-Andrey"
@@ -20,7 +20,7 @@ function Footer() {
 
       <a
         className="course-logo"
-        href="https://rs.school/js/"
+        href="https://rs.school/courses/javascript-preschool-ru"
         target="_blank"
         rel="noreferrer"
       >
