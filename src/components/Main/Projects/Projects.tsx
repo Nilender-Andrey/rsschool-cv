@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Efk from '../../../assets/2021-09-27_18-38-59.jpg';
+import game2048 from '../../../assets/2024-07-01_13-47-56.jpg';
 import findACouple from '../../../assets/match_match_game.jpg';
-import gallery from '../../../assets/2021-12-16_17-45-21.png';
 import './Projects.scss';
 
 const projects = [
+  {
+    to: 'https://nilender-andrey.github.io/JavaScript/game_2048/index.html',
+    src: game2048,
+    name: 'Game 2048',
+  },
   {
     to: 'https://rolling-scopes-school.github.io/nilender-andrey-JSFE2021Q1/english-for-kids-base/dist/',
     src: Efk,
@@ -15,11 +19,6 @@ const projects = [
     to: 'https://rolling-scopes-school.github.io/nilender-andrey-JSFE2021Q1/match-match-game/dist/',
     src: findACouple,
     name: 'Find a couple',
-  },
-  {
-    to: 'https://nilender-andrey.github.io/test_tasks/image_gallery/',
-    src: gallery,
-    name: 'Gallery',
   },
 ];
 
