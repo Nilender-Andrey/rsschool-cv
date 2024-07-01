@@ -101,6 +101,7 @@
     }
   }
 }
+
 @media (max-width: 1400px) {
   .nav_vertically {
     right: -7px;
@@ -110,6 +111,7 @@
 @media (max-width: 1000px) {
   .nav {
     padding: 10px;
+
     &_horizontally {
       width: 640px;
       margin: 15px -50px 40px auto;
@@ -120,6 +122,7 @@
       right: -6px;
     }
   }
+
   .nav-list__arrow {
     font-size: 16px;
   }
@@ -133,6 +136,7 @@
   .nav {
     font-size: 16px;
     padding: 5px;
+
     &_horizontally {
       width: 580px;
       margin: 15px -40px 40px auto;

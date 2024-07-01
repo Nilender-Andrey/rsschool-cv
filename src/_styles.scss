@@ -3,33 +3,39 @@
 #contacts {
   order: 1;
 }
+
 #summary {
   order: 2;
 }
+
 #skills {
   order: 3;
 }
-#projects {
+
+#courses {
+  order: 8;
+}
+
+#code {
   order: 4;
 }
+
 #languages {
   order: 5;
 }
-#courses {
-  order: 7;
-}
-#code {
+
+#education {
   order: 6;
 }
-#education {
-  order: 8;
+
+#projects {
+  order: 7;
 }
 
 .section-narrow,
 .section-broad {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .section-narrow {
@@ -48,6 +54,7 @@
   &_first-child {
     border-radius: 0 5px 0 0;
   }
+
   &_last-child {
     border-radius: 0 0 5px 0;
   }
@@ -67,6 +74,7 @@
   &_first-child {
     border-radius: 5px 5px 0 0;
   }
+
   &_last-child {
     border-radius: 0 0 5px 5px;
   }
@@ -78,6 +86,7 @@
     margin-bottom: 15px;
   }
 }
+
 .subtitle {
   text-align: center;
   text-transform: uppercase;
@@ -91,6 +100,7 @@
   color: $LINK_NAV_COLOR;
   list-style-type: none;
 }
+
 .link {
   text-decoration: none;
   color: $LINK_COLOR;
@@ -129,10 +139,12 @@
     margin: 10px auto;
     background-color: $BG_COLOR_ADDITIONAL;
   }
+
   &_color_grey {
     margin: 20px auto;
     background-color: $BG_COLOR_LIGHT;
   }
+
   &_color_dark-grey {
     margin: 20px auto;
     background-color: $BG_COLOR_DARK;
@@ -146,6 +158,7 @@
 }
 
 @media (max-width: 1000px) {
+
   .section-narrow,
   .section-broad {
     padding: 10px 1%;
@@ -155,6 +168,7 @@
     font-size: 1.1rem;
   }
 }
+
 @media (max-width: 800px) {
   .list__text {
     display: none;
@@ -165,8 +179,17 @@
   #contacts {
     order: 1;
   }
+
   #summary {
     order: 2;
+  }
+
+  #languages {
+    order: 6;
+  }
+
+  #education {
+    order: 5;
   }
 
   .container {
@@ -191,14 +214,17 @@
   .decoration {
     margin: 10px auto;
   }
+
   .subtitle {
     font-size: 1.1rem;
     margin-top: 10px;
     margin-bottom: 5px;
   }
+
   .list {
     align-self: center;
   }
+
   .section__text {
     text-align: center;
   }
